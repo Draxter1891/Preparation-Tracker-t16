@@ -9,14 +9,13 @@ export default function Overview() {
   return (
     <div className="space-y-6">
       <header>
-        <p className="eyebrow">Curated docket · Live syllabus</p>
+        <p className="eyebrow">Curate your syllabus & Path</p>
         <h1 className="mt-1 font-serif text-3xl font-bold sm:text-4xl">
           Weekly Practice{" "}
           <em className="font-medium text-brand-700">Momentum</em>
         </h1>
         <p className="mt-2 max-w-xl text-sm text-brand-900/70">
-          Systematic technical articulation, algorithmic cadence and
-          machine-coding mastery, recorded with deliberate rigor.
+         Algorithms, machine coding and technical questions, all tracked in one place so you can see what’s done and what’s left.
         </p>
       </header>
       <ProgressHero />

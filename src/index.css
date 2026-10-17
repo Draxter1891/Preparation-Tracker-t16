@@ -34,27 +34,29 @@ body {
   @apply bg-cream-100 font-sans text-brand-900 antialiased;
 }
 
-.eyebrow {
-  @apply text-[11px] font-medium uppercase tracking-[0.14em] text-brand-700/80;
-}
+@layer components {
+  .eyebrow {
+    @apply text-[11px] font-medium uppercase tracking-[0.14em] text-brand-700/80;
+  }
 
-.card {
-  @apply rounded-xl border border-cream-300/70 bg-cream-50 shadow-sm;
-}
+  .card {
+    @apply rounded-xl border border-cream-300/70 bg-cream-50 shadow-sm;
+  }
 
-.input {
-  @apply w-full rounded-md border border-cream-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-400/30;
-}
+  .input {
+    @apply w-full rounded-md border border-cream-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-400/30;
+  }
 
-.btn-primary,
-.btn-ghost {
-  @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition;
-}
+  .btn-primary,
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition;
+  }
 
-.btn-primary {
-  @apply bg-brand-700 text-white hover:bg-brand-900;
-}
+  .btn-primary {
+    @apply bg-brand-700 text-white hover:bg-brand-900;
+  }
 
-.btn-ghost {
-  @apply border border-cream-300 bg-cream-50 hover:bg-cream-200;
+  .btn-ghost {
+    @apply border border-cream-300 bg-cream-50 hover:bg-cream-200;
+  }
 }
