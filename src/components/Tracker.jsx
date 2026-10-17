@@ -27,7 +27,7 @@ function matches(q, f) {
 function Select({ label, value, onChange, children }) {
   return (
     <select
-      className="input !w-auto !py-1.5"
+      className="input w-auto! py-1.5!"
       aria-label={label}
       value={value}
       onChange={(e) => onChange(e.target.value)}

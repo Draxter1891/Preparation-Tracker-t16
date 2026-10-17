@@ -21,13 +21,13 @@ const Navbar = () => {
           <p className="font-serif text-3xl font-bold leading-none">
             PrepEditorial
           </p>
-          <p className="eyebrow mt-1 hidden !text-[9px] sm:block">
+          <p className="eyebrow mt-1 hidden text-[9px]! sm:block">
             Log Your Learning
           </p>
         </div>
         <div className="flex gap-2 lg:hidden">
           <button
-            className="btn-primary !px-3"
+            className="btn-primary px-3!"
             onClick={() => openForm(null)}
             aria-label="Add problem"
           >
