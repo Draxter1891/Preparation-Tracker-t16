@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-50: #fffcf5;
+  --color-cream-100: #fdf8ec;
+  --color-cream-200: #f5ecd5;
+  --color-cream-300: #e9dcb9;
+
+  --color-brand-400: #d69a22;
+  --color-brand-600: #a8690a;
+  --color-brand-700: #8a5a0b;
+  --color-brand-900: #3b2a0a;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: Inter, system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  @apply bg-cream-100 font-sans text-brand-900 antialiased;
+}
+
+.eyebrow {
+  @apply text-[11px] font-medium uppercase tracking-[0.14em] text-brand-700/80;
+}
+
+.card {
+  @apply rounded-xl border border-cream-300/70 bg-cream-50 shadow-sm;
+}
+
+.input {
+  @apply w-full rounded-md border border-cream-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-400/30;
+}
+
+.btn-primary,
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition;
+}
+
+.btn-primary {
+  @apply bg-brand-700 text-white hover:bg-brand-900;
+}
+
+.btn-ghost {
+  @apply border border-cream-300 bg-cream-50 hover:bg-cream-200;
+}
